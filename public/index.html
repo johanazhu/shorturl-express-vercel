@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>短链接Express小应用 | azhubaby.com</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.azhubaby.com/icons/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>短链接Express小应用</h1>
+    <main>
+      <section>
+        <form action="api/shorturl" method="POST">
+          <fieldset>
+            <legend>URL Shortener</legend>
+            <label for="url_input">URL:</label>
+            <input
+              id="url_input"
+              type="text"
+              name="url"
+              placeholder="https://www.azhubaby.com/"
+            />
+            <input type="submit" value="POST URL" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>By <a href="https://www.azhubaby.com/">johan</a></p>
+      <p>
+        例子来源
+        <a
+          href="https://www.freecodecamp.org/chinese/learn/back-end-development-and-apis/back-end-development-and-apis-projects/timestamp-microservice/"
+          >freecodecamp-nodejs-时间戳微服务</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
