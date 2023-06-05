@@ -14,11 +14,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(bodyParser.json());
 
-app.use(express.static("public"));
-
-// app.get("/", function (req, res) {
-//   res.sendFile(process.cwd() + "/public/index.html");
-// });
+// app.use(express.static("public"));
+app.use(express.static(__dirname + "/public/"));
 
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/public/index.html");
